@@ -8,15 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!--https://github.com/mattboldt/typed.js-->
     <script defer type="text/javascript" src="js/animate.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <header>cool js pt 2</header>
-    <main>
-        <p id="demo-maths"></p>
-    </main>
-    <footer>
+    <div class= "container">
+        <header>
+            <h1>Today's to-dos</h1>
+        </header>
+       <main>
+            <form>
+                <label for="newTodo">Add a new to-do:</label>
+                    <input type="text" id="newTodo" class="new-todo" placeholder="New todo"/>
+                    <button type=" submit" class="add-todo" id="addNewTodo">
+                        <i class="fas fa-plus"></i>
+                        <span>Add</span>    
+                    </button>
+            </form>
+            <div class="neededTodo">
+                <h2>To do</h2>
+                <ul class="todo-list" id="todoList"></ul>
+            </div>
+            
+            <div class="completed">
+                <h2>Completed</h2>
+                <ul class="todo-done-list" id="todoDoneList"></ul>
+            </div>
 
-    </footer>
+            <div class="clear">
+                <button type = "submit" class="click-delete" id="clear-all">
+                    <span>Clear all</span>
+                </button>
+            </div>
+
+        </main>
+
+       <footer>
+
+       </footer>
+        
+
+    </div>
+  
 </body>
+</html>

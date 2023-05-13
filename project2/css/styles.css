@@ -1,0 +1,109 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    background-color: rgb(153, 0, 255);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 600px;
+    height: 800px;
+}
+
+header h1{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+form{
+    padding: 40px;
+    font-size: 25px;
+    background-color: rgb(255, 0, 166);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.new-todo{
+   font-size: 20px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   padding: 10px;
+}
+
+.add-todo{
+    margin-left: -20px;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.neededTodo h2{
+    margin: 10px;
+    text-align: left;
+}
+
+.todo-list{
+    font-display: flex;
+    text-align: left;
+    padding: 30px;
+    background-color:  rgb(255, 0, 166);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.todo-list li{
+    margin-left: 40px
+}
+
+.completed h2{
+    margin: 10px;
+    text-align: left;
+    
+} 
+
+.todo-done-list{
+    text-align: left;
+    padding: 30px;
+    background-color: rgb(255, 0, 166);
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.todo-done-list li{
+    margin-left: 40px;
+    text-decoration: line-through;
+    color: #000000;
+}
+
+.click-delete{
+    /* font-display: flex;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 5px;
+    padding: 10px; */
+    
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: rgb(0, 255, 136);
+    border-width: 5px;
+
+}
+
