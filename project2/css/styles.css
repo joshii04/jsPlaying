@@ -4,15 +4,21 @@
     padding: 0;
 }
 
+.main{
+    overflow-x: hidden;
+    z-index: 12;
+}
+
 .container{
     text-align: center;
-    background-color: rgb(153, 0, 255);
+    background-color: rgba(187, 113, 236, 0.658);
     padding: 30px;
     margin: auto;
     margin-top: 50px;
     border-radius: 10px;
     width: 600px;
     height: 800px;
+    overflow: hidden;
 }
 
 header h1{
@@ -23,6 +29,7 @@ header h1{
     border-radius: 10px;
     margin-bottom: 10px;
     font-style: italic;
+    z-index: 12;
 }
 
 form{
@@ -31,7 +38,9 @@ form{
     background-color: rgb(255, 0, 166);
     border-radius: 10px;
     font-weight: bold;
+    z-index: 12;
 }
+
 
 .new-todo{
    font-size: 20px;
@@ -106,4 +115,141 @@ form{
     border-width: 5px;
 
 }
+.bubbles{ 
+    position: fixed;
+    display: flex;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    z-index: -1;
+    height: 100%;
+}
 
+.bubbles span{ 
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow:  0 0 0 10px #4fc3dc44, 
+    0 0 100px #4fc3dc;
+    animation: animate 5s linear infinite;
+
+}
+
+.bubbles span:nth-child(1)
+{
+    background: #ff2d75;
+    box-shadow:  0 0 0 10px #ff2d7544, 
+    0 0 100px #ff2d75,
+    0 0 50px #ff2d75;
+    animation: animate 7s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+.bubbles span:nth-child(2)
+{
+    background: #4fc3dc;
+    box-shadow:  0 0 0 10px #4fc3dc44, 
+    0 0 100px #4fc3dc;
+    animation: animate 5s linear infinite;
+    animation-delay: 1s;
+}
+
+.bubbles span:nth-child(3)
+{
+    background: #ff2d75;
+    box-shadow:  0 0 0 10px #ff2d7544, 
+    0 0 100px #ff2d75,
+    0 0 50px #ff2d75;
+    animation: animate 5s linear infinite;
+    animation-delay: 2s;
+}
+
+
+.bubbles span:nth-child(4)
+{
+    background: #4fc3dc;
+    box-shadow:  0 0 0 10px #4fc3dc44, 
+    0 0 100px #4fc3dc;
+    animation: animate 8s linear infinite;
+    animation-delay: 0.2s;
+}
+
+.bubbles span:nth-child(5)
+{
+    background: #ff2d75;
+    box-shadow:  0 0 0 10px #ff2d7544, 
+    0 0 100px #ff2d75,
+    0 0 50px #ff2d75;
+    animation: animate 7s linear infinite;
+    animation-delay: 2.5s;
+}
+
+
+.bubbles span:nth-child(6)
+{
+    background: #2dff6f;
+    box-shadow:  0 0 0 10px #2dffa744, 
+    0 0 100px #2dff6f,
+    0 0 50px  #2dff6f;
+    animation: animate 12s linear infinite;
+    animation-delay: 3s;
+}
+.bubbles span:nth-child(7)
+{
+    background: #ff2d75;
+    box-shadow:  0 0 0 10px #ff2d7544, 
+    0 0 100px #ff2d75,
+    0 0 50px #ff2d75;
+    animation: animate 6s linear infinite;
+    animation-delay: 1.8s;
+}
+
+.bubbles span:nth-child(8)
+{
+    background: #4fc3dc;
+    box-shadow:  0 0 0 10px #4fc3dc44, 
+    0 0 100px #4fc3dc;
+    animation: animate 4.8s linear infinite;
+    animation-delay: 7.1s;
+}
+
+
+.bubbles span:nth-child(9)
+{
+    background: #2dff6f;
+    box-shadow:  0 0 0 10px #2dffa744, 
+    0 0 100px #2dff6f,
+    0 0 50px  #2dff6f;
+    animation: animate 6s linear infinite;
+    animation-delay: 1s;
+}
+
+.bubbles span:nth-child(10)
+{
+    background: #2dff6f;
+    box-shadow:  0 0 0 10px #2dffa744, 
+    0 0 100px #2dff6f,
+    0 0 50px  #2dff6f;
+    animation: animate 8s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate{
+    0%
+    {
+      top: 100%;
+      transform: scale(0);
+        /* // transform: translateY(10vh) scale(0); */
+    }
+    100%
+    {
+      top: 0%;
+      transform: scale(1);
+        /* transform: translateY(-100%) scale(1); */
+    }
+}
