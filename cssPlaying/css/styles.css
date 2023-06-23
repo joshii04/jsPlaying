@@ -1,0 +1,96 @@
+*{
+
+    /* Applied to all */
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%; /* The percent brings the space between closer */
+    height: 75px;
+    line-height: 75px; /*creates a container like box for the space of each
+                        word in the div/nav */
+    background-color: rgb(228, 121, 121);                    
+
+}
+
+nav .navbar-brand{ /* class selector */
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .5px; /* spacing for the menu brand */
+
+}
+
+nav .nav-list {
+    display: flex; 
+    /* puts in flex */
+}
+
+nav .nav-list .nav-item{
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px; 
+    /* ^ same line and 30 px all round */
+    transition: .5s; 
+    /* ^ transition for any animations put on these elements
+    They also load in from the right hand side */
+}
+
+nav .nav-list .nav-item:hover {
+    background-color: rgb(181, 125, 233);
+}
+
+nav .nav-list .nav-link{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    /* ^ boldness of the font */
+}
+
+@media (max-width: 935px){ 
+    /* ^ once hits 935 pixles goes back to normal */
+    nav{
+        padding: 0 2 rem;
+    }
+
+    nav .nav-list .nav-item{
+        padding: 0 20px;
+        /* ^ takes the padding back */
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    nav .nav-list{
+        display: grid; 
+        /* ^ changes structure to grid style */
+        position: absolute;
+        /* ^ to the origin */
+        background: grey;
+        /* color of the drop down */
+        top: 75px;
+        /* ^75 px from the top of the page */
+        left: 0; 
+        /* ^ align to the left at 0 */
+
+        /* transform: translateY(-100%); */
+        /* ^ when transforming, return to origin at - 100% */
+
+        z-index: -1;
+        transition: .6s;
+
+
+    }
+}
+
+
