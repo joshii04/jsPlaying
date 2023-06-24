@@ -57,6 +57,7 @@ nav .nav-list .nav-link{
     /* ^ boldness of the font */
 }
 
+
 @media (max-width: 935px){ 
     /* ^ once hits 935 pixles goes back to normal */
     nav{
@@ -95,6 +96,63 @@ nav .nav-list .nav-link{
     nav .nav-list .nav-item{
         padding-left: 35px;
     }
+
+    nav .navbar-toggler{
+        display: grid !important;
+        /*  */
+    }
+}
+
+nav .navbar-toggler{
+    display: none;
+    height: min-content;
+    /* ^ squashes together */
+    margin: 18px -10px 0 0;
+    /* ^ margin around the burger menu */
+    cursor: pointer;
+    /* ^ turn to pointer on hover */
+}
+
+nav .navbar-toggler .bar{
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    /* ^ creates space between the lines span */
+    background: white;
+    /* ^ this is to create the burger menu look */
+    border-radius: 5%;
+    /* Rounds off the corners via percents. I prefer pixels, much nicer */
+    transition: .25s;
+    /* ^ .4s to load and animate I guess */
+}
+
+input{
+    display: none;
+    /* ^ don't show */
+}
+
+input:checked ~ nav .nav-list{
+    transform: translateY(0);
+    /* ^ when checked; eg when the burger menu is pressed open the menu */
+}
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+    /* ^ if checked provide margin from top */
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+    /* ^ on press rotate the angle */
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2){
+   display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3){
+ transform: rotate(-45deg);
 }
 
 
