@@ -1,9 +1,14 @@
 "use strict";
-let username = 'dave';
+let username = 'josh';
 console.log(username);
+let a = 12; //this specifies it to a number type
+let b = 6;
+let c = '2'; //to a string
+console.log(a * b);
+// console.log(a / b) This is valid js. However, this is not valid ts
 /*
 
-when a change is made in tsc, you need to
+when a change is made in tsc, you need  to
 
 re-compile with
 
@@ -39,5 +44,24 @@ re-compile with
     
     Then, you can see that the test.js will change to var instead
     of let
+    
+    If you delete a main.ts, you need to manually delete it from your js build
 
 */
+/*
+    Then, you need to goto tsconfig, and go to the bottom and add
+        
+        ,
+            "include": [
+                "src"
+            ]
+
+    This specifies which folder to compile ts files to js files in the build folder
+*/
+/*
+
+when you import js to ts, it will actually still run. However, you would get lots of warnings
+
+If you want to change this, you can do so by uncommenting the emitOnError in tsconfig
+
+*/ 
