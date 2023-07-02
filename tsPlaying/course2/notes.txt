@@ -1,0 +1,38 @@
+                -------- COURSE 2 NOTES --------
+
+Strongly type languages:
+    demand the specifications of types!
+        EG: typescript
+
+Looselt typed langaues: 
+    do not need types specified!
+        EG: js
+            AKA: weakly typed
+
+TS is statically typed: 
+    This means types are checked at
+    compile time
+
+        WHEREAS
+
+    JS is dynamically typed lang
+    This means types are checked at 
+    run time. 
+
+TS bennefits: 
+
+    Self documenting
+    Catch errors in development 
+    Great for teams
+
+Link to run-time vs compile time
+
+    https://www.baeldung.com/wp-content/uploads
+    /sites/4/2021/07/Compile-tme-vs-runtime-1-1024x529-1.png
+
+TS intellisense
+    when hovered over, TS shows what data type 
+    you use
+
+
+
