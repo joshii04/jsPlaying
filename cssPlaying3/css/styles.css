@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: yellow;
+}
+
+.menu-burger{
+    /* background-color: white; */
+    width: 60px;
+    position: relative;
+}
+
+.menu-burger span{
+   background-color: red;
+   width: 80%;
+   height: 5px;
+   display: block; /* this is what shows*/
+   border-radius: 5px;
+   margin-top: 6px;
+}
