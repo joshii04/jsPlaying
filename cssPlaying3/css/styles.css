@@ -9,19 +9,32 @@ body{
 
 header{
     background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    padding: 10px;
 }
 
 .menu-burger{
     /* background-color: white; */
     width: 60px;
     position: relative;
+    padding-top: auto;
 }
 
 .menu-burger span{
    background-color: red;
-   width: 80%;
+   width: 70%;
    height: 5px;
    display: block; /* this is what shows*/
    border-radius: 5px;
-   margin-top: 6px;
+   margin-top: 5px;
+   margin-left: auto;
+   margin-right: auto;
 }
+
+.menu-burger span:nth-child(1){
+    margin-top: 12.5px;
+}
+
+
