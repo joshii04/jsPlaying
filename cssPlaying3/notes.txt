@@ -1,0 +1,21 @@
+/* 
+
+//the perfect cross for this header
+
+.menu-burger span:nth-child(1){
+    margin-top: 12.5px;
+    margin-top: 23px;
+    margin-bottom: -7px;
+    transform: rotate(45deg)
+}
+
+.menu-burger span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: 1px;
+}
+
+.menu-burger span:nth-child(2){
+  display: none;
+}
+
+*/
