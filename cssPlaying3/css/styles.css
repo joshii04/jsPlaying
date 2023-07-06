@@ -22,8 +22,8 @@ header{
 .menu-burger{
     /* background-color: white; */
     width: 60px;
-    position: relative;
     padding-top: auto;
+    
 }
 
 .menu-burger span{
@@ -43,10 +43,7 @@ header{
 
 .menu-burger span{
     line-height: 50px;
-    transition: ease-in-out .1s;
-    scroll-behavior: smooth;
-    /* Dont think the scroll does much here */
-    
+    /* transition: ease-in-out .3s;     */
 }
 
 input{
@@ -58,11 +55,17 @@ input:checked ~ .menu-burger span:nth-child(1){
     margin-top: 23px;
     margin-bottom: -7px;
     transform: rotate(45deg)
+   
 }
 
 input:checked ~ .menu-burger span:nth-child(3){
     transform: rotate(-45deg);
     margin-top: 2px;
+    
+}
+
+input:checked ~ .menu-burger{
+
 }
 
 input:checked ~ .menu-burger span:nth-child(2){
