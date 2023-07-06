@@ -4,15 +4,19 @@
 }
 
 body{
-    background-color: black;
+    /* background-color: black; */
 }
 
 header{
     background-color: yellow;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     line-height: 50px;
-    padding: 10px;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .menu-burger{
@@ -39,5 +43,54 @@ header{
 
 .menu-burger span{
     line-height: 50px;
+    transition: ease-in-out .1s;
+    scroll-behavior: smooth;
+    /* Dont think the scroll does much here */
+    
 }
 
+input{
+    display: none;
+}
+
+input:checked ~ .menu-burger span:nth-child(1){
+    margin-top: 12.5px;
+    margin-top: 23px;
+    margin-bottom: -7px;
+    transform: rotate(45deg)
+}
+
+input:checked ~ .menu-burger span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: 2px;
+}
+
+input:checked ~ .menu-burger span:nth-child(2){
+  display: none;
+}
+
+.nav-list{
+    background-color: rgba(0, 0, 0, 0.756);
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list a:nth-child(2){
+    margin-top: 5px;
+}
+
+input:checked ~ .nav-list{
+   display: flex;
+   position: absolute;
+   margin-top: 60px;
+   width: 100%;
+   z-index: 100;
+}
