@@ -16,6 +16,7 @@ header{
     /* ^ Anchor at top */
     width: 100%;
     z-index: 3;
+    top: 0;
 }
 
 header ul{
@@ -23,30 +24,31 @@ header ul{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(247, 203, 29, 0.621);
 }
 
 header ul a{
     display: block;
+    text-align: center;
     /* ^ Anchor set to block 
             By default anchor is in-line 
                 So, now can click around and still get a click */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     padding: 20px;
-    border-right: 1px solid #aaa;
+    /* border-right: 1px solid #aaa; */
     /* ^ cant see right now, but in desktop view will add small divider between */
     text-decoration: none;
 }
 
 header ul a:hover{
-    background-color: #ddd;
+    background-color: #dddddd9a;
 }
 
 header .logo{
     float: left;
     display: block;
     font-size: 2em;
-    padding: 10px 20px;
+    padding: 15px 20px;
     /* ^ top bottom - left right */
 }
 
@@ -55,8 +57,104 @@ header .menu{
     /* ^ Forces menu to be clear below the left floated title */
     max-height: 0;
     /* ^ by deefault 0 then expand  */
-    transition: max-heighth .2s ease-out;
+    transition: max-height .2s ease-out;
     /* ^ gives anitmation */
 }
 
+header .menu-icon{
+    /* border: 1px solid red; */
+    /* ^ So you can see your work area */
+    padding: 35px 20px;
+    position: relative;
+    /* ^ Acting as parent container for the span
+            Then can use Pos: absolute on child element */
+    float: right; 
+    cursor: pointer;       
+}
 
+header .menu-icon .nav-icon{
+    background: black;
+    display: block;
+    /* ^ By default spans are in-line*/
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+header .menu-icon .nav-icon:before{
+    /* pseudo element */
+    background: black;
+    content: "";
+    /* ^ Empty */
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+header .menu-icon .nav-icon:after{
+    /* pseudo element */
+    background: black;
+    content: "";
+    /* ^ Empty */
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+header .menu-btn{
+    display: none;
+}
+
+header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+    /* ^ the class of .menu is being effecetd and the size of the ul is being opened 
+        This works because of the transition of max-height on header .menu */
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+    /* ^ puts in middle */
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+    /* ^ puts in middle */
+}
+
+@media (min-width: 48em){
+    header li{
+        float: left;
+    }
+    header li a{
+        padding: 20px 30px;
+        background-color: white;
+    }
+    header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+        /* over ride 0 or 240 */
+    }
+    header .menu-icon{
+        display: none;
+    }
+
+}
+
+.temp{
+    padding-top: 40px;
+    margin: 20px;
+}
