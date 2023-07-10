@@ -17,3 +17,46 @@ header{
     width: 100%;
     z-index: 3;
 }
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+header ul a{
+    display: block;
+    /* ^ Anchor set to block 
+            By default anchor is in-line 
+                So, now can click around and still get a click */
+    outline: 1px solid red;
+    padding: 20px;
+    border-right: 1px solid #aaa;
+    /* ^ cant see right now, but in desktop view will add small divider between */
+    text-decoration: none;
+}
+
+header ul a:hover{
+    background-color: #ddd;
+}
+
+header .logo{
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+    /* ^ top bottom - left right */
+}
+
+header .menu{
+    clear: both;
+    /* ^ Forces menu to be clear below the left floated title */
+    max-height: 0;
+    /* ^ by deefault 0 then expand  */
+    transition: max-heighth .2s ease-out;
+    /* ^ gives anitmation */
+}
+
+
