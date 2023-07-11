@@ -9,7 +9,7 @@ a{
 }
 
 header{
-    background-color: white;
+    background-color: rgba(50, 225, 182, .9);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0, .1 );
     /* ^ hor ver blur colour and 10 percent transparency */
     position: fixed; 
@@ -24,8 +24,7 @@ header ul{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: rgba(247, 203, 29, 0.621);
-}
+    background-color: rgba(73, 66, 204, 0.3);}
 
 header ul a{
     display: block;
@@ -41,7 +40,7 @@ header ul a{
 }
 
 header ul a:hover{
-    background-color: #dddddd9a;
+    background-color: #dddddd8a;
 }
 
 header .logo{
