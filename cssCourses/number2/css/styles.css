@@ -1,0 +1,115 @@
+/* Building mobile menu first */
+
+*{
+    box-sizing: border-box;
+    /* ^ makes the padding go all the way to the edges */
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    background: #222;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+    /* ^ Make enough space for finger or thumb */
+}
+
+.menu li a{
+    display: block;
+    /* ^ trigger whole line */
+}
+
+.logo a{
+    font-size: 20px;
+}
+
+.item.button.secondary{
+    border-bottom: 1px #444 solid;
+    /* ^ nice little border  */
+}
+
+/* - - - - - - - - - - - -mobile menu - - - - - - - - - - - */
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    order: 1;
+}
+
+.item.button{
+    order: 2;
+}
+
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    /* ^ After the bottom border */
+    /* display: none; */
+}
+
+.item.active{
+    display: block;
+    /* ^ this is for the js later */
+}
+
+.toggle{
+    cursor: pointer;
+}
+
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars:before, .bars::after{
+    background: #999;
+    display: inline-block;
+    content: "";
+    /* ^ need this for before and after pseudo elements */
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars:before{
+    top: 5px;
+}
+
+.bars:after{
+    top: -5px;
+}
+
+
+
+/* - - - - - - - - - - - - Tablet menu - - - - - - - - - - - - */
+
