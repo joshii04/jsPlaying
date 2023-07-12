@@ -127,5 +127,35 @@ a:hover{
         display: block;
         /* ^ just for tablet we are making these visible again rather then display none */
     }
+    .toggle{
+        order: 2;
+    }
+    .item.button.secondary{
+        border-bottom: 0;
+       
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: teal;
+        border: 1px solid teal;
+        border-radius: 50em;
+    }
+    .item.button.secondary a{
+        background: transparent;
+    }
+    .button a:hover{
+        transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background: #006d6d;
+        border-color: #005959;
+        /* ^ Awesome animation */
+    }
+    .button.secondary a:hover{
+        color: #ddd;
+    }
+
+    
 
 }
