@@ -56,6 +56,7 @@ a:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .toggle{
@@ -71,7 +72,7 @@ a:hover{
     text-align: center;
     order: 3;
     /* ^ After the bottom border */
-    /* display: none; */
+    display: none;
 }
 
 .item.active{
@@ -113,3 +114,18 @@ a:hover{
 
 /* - - - - - - - - - - - - Tablet menu - - - - - - - - - - - - */
 
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+        /* ^ just for tablet we are making these visible again rather then display none */
+    }
+
+}
