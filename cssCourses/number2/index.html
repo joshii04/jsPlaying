@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive navbar</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+            
+        <script>
+            $(function() {
+            $(".toggle").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        // ^ if doesnt have the class of active add it
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                });
+            });
+        </script>
 </head>
 <body>
     <nav>
+        
         <ul class="menu">
             <!-- li*7a shortcut to print loads -->
             <li class="logo"><a href="#">FollowAndrew.dev</a></li>
