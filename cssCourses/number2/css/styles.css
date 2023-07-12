@@ -156,6 +156,37 @@ a:hover{
         color: #ddd;
     }
 
+}
+
+/* - - - - - - - - - - - - - Desktop view - - - - - - - - - - - -  */
+
+@media all and (min-width: 768px){
     
+    .item{
+        display: block;
+        /* ^ makes appear */
+        width: auto;
+        /* ^ Shrink down accordinf to content */
+    }
+    .toggle{
+        display: none;
+        /* ^ get rid of burger menu */
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }   
+    .menu li.button{
+        padding-right: 0;
+    }
 
 }
+
