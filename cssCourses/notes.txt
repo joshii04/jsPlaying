@@ -1,0 +1,34 @@
+     - - - - - - - - CSS positioning - - - - - - - - -
+
+BLOCK: Whole section
+
+INLINE: Stack more in-line until can't fit and then move to next
+        row
+
+RELATIVE: Does not remove elements from the document flow
+            EG: still exists in the area so other things 
+                don't slide in.
+
+ABSOLUTE: - Always working with 2 elements. 
+          - Moves from parent offset. 
+          - Parent = Relative 
+          - Absolute = child of relative object
+
+          - Elements with absoulyte positioning
+            are removed from the document flow
+
+FIXED: - Always fixed according to the viewport
+       - Moves with the browser window
+       - Will be at the front
+       - Removed from doc flow and other elements will
+         slide in.
+
+STICKY: - Slides up until condition met
+            EG: top 0;
+
+
+
+
+
+
+
