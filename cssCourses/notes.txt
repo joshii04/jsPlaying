@@ -11,9 +11,8 @@ RELATIVE: Does not remove elements from the document flow
 
 ABSOLUTE: - Always working with 2 elements. 
           - Moves from parent offset. 
-          - Parent = Relative 
+          - Parent = Relative: set parent to relative
           - Absolute = child of relative object
-
           - Elements with absoulyte positioning
             are removed from the document flow
 
