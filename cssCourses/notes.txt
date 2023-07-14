@@ -26,6 +26,12 @@ STICKY: - Slides up until condition met
             EG: top 0;
 
 
+- - - - - - - - - - Psuedo elements - - - - - - - - - - - -
+
+FIRST-LETTER - first letter apply style
+
+FIRST-LINE - Apply style to the whole line
+
 
 
 
