@@ -32,6 +32,12 @@ FIRST-LETTER - first letter apply style
 
 FIRST-LINE - Apply style to the whole line
 
+::BEFORE - Contet: implements content before the element
+
+::AFTER - Same here too
+
+PSEUDO - In-line by default
+
 
 
 

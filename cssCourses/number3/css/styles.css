@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+}
+
+#test{
+    width: 200px;
+    height: 200px;
+    /* ^ Creates the box */
+    position: relative;
+    margin: 100px auto;
+    /* ^ 100px and center align */
+    background-color: rgb(255, 255, 255) ;
+}
+
+#test:before{
+    display: block;
+    content: "before";
+    position: absolute;
+    box-shadow: -5px 5px 5px rgba(0,0,0, .5);
+    /* ^ 5px of blur */
+    width: 100px;
+    bottom: 3px;
+    left: 8px;
+    height: 25px;
+    transform: skew(0deg, -4deg);
+    z-index: -5;
+}
+
+#test::after{
+    display: block;
+    position: absolute;
+    content: "";
+    box-shadow: 5px 5px 5px  rgba(0,0,0, .5);
+    /* ^ 5px of blur */
+    width: 100px;
+    bottom: 3px;
+    right: 8px;
+    height: 25px;
+    transform: skew(0deg, 4deg);
+    z-index: -5;
+}
