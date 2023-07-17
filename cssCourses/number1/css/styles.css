@@ -24,7 +24,8 @@ header ul{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: rgba(73, 66, 204, 0.3);}
+    background-color: rgba(73, 66, 204, 0.3);
+}
 
 header ul a{
     display: block;

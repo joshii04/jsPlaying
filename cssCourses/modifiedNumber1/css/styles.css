@@ -2,3 +2,176 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+a{
+    color: black;
+}
+
+header{
+    background-color: rgba(50, 225, 182, 1);
+    box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /* background-color: rgba(73,66,204,.3); */
+}
+
+header ul a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header ul a:hover{
+    background-color: #dddddd8a;
+}
+
+header .logo{
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 15px 20px;
+}
+
+header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+header .menu-icon{
+    padding: 35px 20px;
+    position: relative;
+    float: right;
+    cursor: right;
+}
+
+header .menu-icon .nav-icon{
+    background-color: black;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+header .menu-icon .nav-icon:before{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+    /* This is the top of the burger menu */
+}
+
+header .menu-icon .nav-icon:after{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+header .menu-btn{
+    display: none;
+}
+
+header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+
+header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+    /* ^ puts in middle */
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+    /* ^ puts in middle */
+}
+
+@media (min-width: 48em){
+    header li{
+        float: left;
+    }
+    header li a{
+        padding: 24px 30px;
+    }
+    header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+        /* over ride 0 or 240 */
+    }
+    header .menu-icon{
+        display: none;
+    }
+
+}
+
+.temp{
+    padding-top: 40px;
+    margin: 20px;
+}
+
+.temp2{
+    padding: 70px 70px;
+    margin: 20px;
+    outline: 5px solid red;
+    text-align: center;
+}
+
+.wrap2{
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+.temp3{
+    outline: 1px solid red;
+    width: 40%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.temp4{
+    outline: 1px solid red;
+    width: 40%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.temp5{
+    padding-top: 10px;
+    margin: 20px;
+}
+
+
