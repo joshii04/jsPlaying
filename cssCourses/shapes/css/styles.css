@@ -3,7 +3,6 @@
     width: 400px;
     height: 400px;
     background-color: yellow;
-    position: relative;
 }
 
 .red{
@@ -16,9 +15,7 @@
     width: 100px;
     height: 100px;
     background-color: blue;
-    position: fixed;
-    /* ^ uses vh */
-    bottom: 400px;
+    /* ^ does not remove from doc flow */
 }
 
 .green{
