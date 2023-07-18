@@ -5,11 +5,13 @@ body{
 
 a{
     color: black;
+    text-decoration: none;
 }
 
 header{
     background-color: rgba(50, 225, 182, 1);
-    box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+    box-shadow: 0px 5px 30px rgba(0,0,0,.3);
+    /* ^ horizontal - vertical - blur */
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -40,6 +42,7 @@ header .logo{
     display: block;
     font-size: 2em;
     padding: 15px 20px;
+    margin-top: 5px;
 }
 
 header .menu{
@@ -53,6 +56,7 @@ header .menu-icon{
     position: relative;
     float: right;
     cursor: right;
+    margin-top: 2px;
 }
 
 header .menu-icon .nav-icon{
@@ -151,7 +155,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
 
 .temp3{
     outline: 1px solid red;
-    width: 40%;
+    width: 48.4%;
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -161,7 +165,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
 
 .temp4{
     outline: 1px solid red;
-    width: 40%;
+    width: 48.4%;
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
