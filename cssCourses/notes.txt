@@ -41,12 +41,37 @@ PSEUDO - In-line by default
 
 - - - - - - - - - - - Flex box - - - - - - - - - - - -
 
-GAP - New to flex and operates like margin 
+(display) GAP - New to flex and operates like margin 
     - Use in lists
 
-SHRINK - Use for content overflow in flex
+(display) SHRINK - Use for content overflow in flex
        - 0 = off 1 = on (ratios)
 
-       
+(display) WRAP - Fixes the overflow issue
 
+> * - Select all children
+    - EG; 
+        .columns{
+          display: flex;
+          gap: 2rem;
+        }
+
+        .columns > *{
+          flex-shrink: 0;
+        }
+
+FLEX: 1 - All equal sizes of stuff within a row
+FLEX-BASIS: 0 (better)
+        - Does the same thing
+        - Sets all items to equal width and height
+        - EG; 
+            flex-basis: 300px 
+
+JUSTIFY CONTENT - Only works if you have extra space within the parent class 
+
+FLEX-START - Push elements to the start of the parent class
+FLEX-END - To end
+
+
+       
 
