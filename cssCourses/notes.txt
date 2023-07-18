@@ -26,7 +26,7 @@ STICKY: - Slides up until condition met
             EG: top 0;
 
 
-- - - - - - - - - - Psuedo elements - - - - - - - - - - - -
+- - - - - - - - - - - Psuedo elements - - - - - - - - - - - -
 
 FIRST-LETTER - first letter apply style
 
@@ -39,7 +39,14 @@ FIRST-LINE - Apply style to the whole line
 PSEUDO - In-line by default
 
 
+- - - - - - - - - - - Flex box - - - - - - - - - - - -
 
+GAP - New to flex and operates like margin 
+    - Use in lists
 
+SHRINK - Use for content overflow in flex
+       - 0 = off 1 = on (ratios)
+
+       
 
 
