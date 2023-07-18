@@ -23,6 +23,8 @@ header ul{
     padding: 0;
     list-style: none;
     overflow: hidden;
+    margin-top: 4px;
+    
     /* background-color: rgba(73,66,204,.3); */
 }
 
@@ -31,10 +33,12 @@ header ul a{
     text-align: center;
     padding: 20px;
     text-decoration: none;
+    
 }
 
 header ul a:hover{
-    background-color: #dddddd8a;
+    /* background-color: #dddddd8a; */
+    /* text-decoration: underline; */
 }
 
 header .logo{
@@ -131,6 +135,10 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
     }
     header .menu-icon{
         display: none;
+    }
+    header ul a:hover{
+        /* background-color: #dddddd8a; */
+        text-decoration: underline;
     }
 
 }
