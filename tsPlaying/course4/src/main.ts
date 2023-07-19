@@ -77,4 +77,4 @@ enum Grade {
     A,
 }
 
-console.log(Grade.U)
+console.log(Grade.D)
