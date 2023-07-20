@@ -40,7 +40,7 @@ header .logo{
     float: left;
     display: block;
     padding: 15px 20px;
-    margin-top: 10px;
+    margin-top: 9px;
     font-size: 2em;
 }
 
@@ -142,6 +142,12 @@ header ul a:hover{
         margin-top: 7px;
     }
 
+}
+
+@media (max-width: 390px){
+    header .logo{
+        margin-top: 5px;
+    }
 }
 
 
