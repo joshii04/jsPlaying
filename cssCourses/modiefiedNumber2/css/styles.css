@@ -17,26 +17,30 @@ header{
     z-index: 100;
 }
 
+main{
+    margin-top: 30px;
+}
+
 header ul{
-    list-style: none;
-    margin-top: 4px;
     margin: 0;
     padding: 0;
+    list-style: none;
     overflow: hidden;
+    margin-top: 4px;
 }
 
 header ul a{
     display: block;
     padding: 20px;
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
 }
 
 header .logo{
     float: left;
     display: block;
     padding: 15px 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 2em;
 }
 
@@ -58,8 +62,130 @@ header .menu-icon .nav-icon{
     background-color: black;
     display: block;
     height: 2px;
-    width: 18px;
+    width: 25px;
     position: relative;
     transition: background .2s ease-out;
 }
+
+header .menu-icon .nav-icon:before{
+    background-color: black;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all .2s ease-out;
+}
+
+header .menu-icon .nav-icon:after{
+    background-color: black;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .2s ease-out;
+}
+
+header .menu-btn{
+    display: none;
+}
+
+header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-315deg);
+    top: 0;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(315deg);
+    top: 0;
+    /* ^ puts in middle */
+}
+
+header ul a:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+@media (min-width: 48em){
+    header li{
+        float: left;
+    }
+    header li a{
+        padding: 24px 30px;
+    }
+    header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+        /* over ride 0 or 240 */
+    }
+    header .menu-icon{
+        display: none;
+    }
+    header ul a:hover{
+        /* background-color: #dddddd8a; */
+        text-decoration: underline;
+        background-color: transparent;
+    }
+    header .logo{
+        margin-top: 7px;
+    }
+
+}
+
+
+.temp{
+    padding-top: 40px;
+    margin: 20px;
+}
+
+.temp2{
+    padding: 70px 70px;
+    margin: 20px;
+    outline: 5px solid red;
+    text-align: center;
+}
+
+.wrap2{
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+.temp3{
+    outline: 1px solid red;
+    width: 48.4%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.temp4{
+    outline: 1px solid red;
+    width: 48.4%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.temp5{
+    padding-top: 10px;
+    margin: 20px;
+}
+
 

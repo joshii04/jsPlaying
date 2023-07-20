@@ -143,7 +143,7 @@ header ul a:hover{
     header ul a:hover{
         /* background-color: #dddddd8a; */
         text-decoration: underline;
-        background-color: rgba(50, 225, 182, 1);
+        background-color: none;
     }
 
 }
