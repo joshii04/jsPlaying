@@ -40,3 +40,26 @@ header .logo{
     font-size: 2em;
 }
 
+header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+header .menu-icon{
+    padding: 35px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+header .menu-icon .nav-icon{
+    background-color: black;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
