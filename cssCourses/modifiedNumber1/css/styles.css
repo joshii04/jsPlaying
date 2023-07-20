@@ -120,6 +120,10 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
     /* ^ puts in middle */
 }
 
+header ul a:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+
 @media (min-width: 48em){
     header li{
         float: left;
@@ -139,6 +143,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after{
     header ul a:hover{
         /* background-color: #dddddd8a; */
         text-decoration: underline;
+        background-color: rgba(50, 225, 182, 1);
     }
 
 }
