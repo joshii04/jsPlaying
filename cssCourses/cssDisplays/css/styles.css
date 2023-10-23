@@ -1,0 +1,21 @@
+#wrapper{
+
+}
+
+#content{
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    grid-auto-flow: row;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+@media(min-width: 48em){
+    #content{
+        /* grid-template-columns: 100%; */
+        grid-auto-flow: column;
+        margin: 20px auto;
+        gap: 20px;
+    }
+   
+}
