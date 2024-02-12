@@ -10,7 +10,6 @@ const url = 'https://www.theguardian.com/uk'
 axios(url)
     .then(response => {
         const html = response.data
-        // console.log(html)
         const $ = cheerio.load(html)
         const articles = []
 
@@ -23,6 +22,7 @@ axios(url)
             })
         })
         console.log(articles)
-    }).catch(error => console.log(error))
+        
+    }).catch(err => console.log(err))
 
 app.listen(PORT, () => console.log(`server is running on PORT ${PORT}`))
